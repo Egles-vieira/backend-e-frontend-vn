@@ -1,6 +1,6 @@
 // src/pages/clientes/ClientesList.jsx
 import React from 'react';
-import { Plus, Download, Users, CheckCircle, FileText, TrendingUp } from 'lucide-react';
+import { Plus, Download, Users, CircleCheck as CheckCircle, FileText, TrendingUp } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const ClientesList = () => {

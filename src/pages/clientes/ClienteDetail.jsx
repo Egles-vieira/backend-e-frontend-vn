@@ -1,7 +1,7 @@
 // src/pages/clientes/ClienteDetail.jsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Edit, Trash2 } from 'lucide-react';
+import { ArrowLeft, CreditCard as Edit, Trash2 } from 'lucide-react';
 
 const ClienteDetail = () => {
   const { id } = useParams();

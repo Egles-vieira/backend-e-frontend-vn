@@ -1,7 +1,7 @@
 // src/components/common/Layout.jsx
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, Home, Users, Truck, Package, FileText, MapPin, Settings, BarChart3, LogOut, User, Bell, ChevronDown, Building2, UserCheck, Route } from 'lucide-react';
+import { Menu, X, Hop as Home, Users, Truck, Package, FileText, MapPin, Settings, ChartBar as BarChart3, LogOut, User, Bell, ChevronDown, Building2, UserCheck, Route } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 const Layout = ({ children }) => {

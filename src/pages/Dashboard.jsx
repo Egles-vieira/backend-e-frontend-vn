@@ -1,6 +1,6 @@
 // src/pages/Dashboard.jsx
 import React from 'react';
-import { Users, Truck, Package, FileText, TrendingUp, AlertCircle, CheckCircle, Clock, BarChart3 } from 'lucide-react';
+import { Users, Truck, Package, FileText, TrendingUp, CircleAlert as AlertCircle, CircleCheck as CheckCircle, Clock, ChartBar as BarChart3 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 const Dashboard = () => {
