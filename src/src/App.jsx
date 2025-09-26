@@ -82,7 +82,7 @@ function App() {
                 </ProtectedRoute>
               } />
 
-              {/* Placeholder Routes - Implementar seguindo padrão dos clientes */}
+              {/* Placeholder Routes */}
               <Route path="/transportadoras" element={
                 <ProtectedRoute>
                   <Layout>

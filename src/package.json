@@ -1,7 +1,7 @@
 @@ .. @@
    "name": "vite-project",
 -  "private": true,
-+  "name": "road-rw-frontend",
+  "name": "road-rw-frontend",
 +  "private": false,
    "version": "0.0.0",
    "type": "module",
@@ -12,3 +12,7 @@
 +    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
      "preview": "vite preview"
    },
+    "react-dom": "^19.1.1"
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
