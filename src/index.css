@@ -162,3 +162,24 @@
     page-break-after: always;
   }
 }
+
+/* Dark mode support (future) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles can be added here */
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .focus-ring {
+    @apply focus:ring-4;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
