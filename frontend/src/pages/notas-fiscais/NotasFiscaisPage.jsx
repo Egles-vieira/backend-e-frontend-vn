@@ -52,13 +52,13 @@ function NotasFiscaisPage() {
       const [transportadorasRes, clientesRes] = await Promise.all([
         fetch('http://localhost:3001/api/transportadoras', {
           headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
             'Content-Type': 'application/json'
           }
         }),
         fetch('http://localhost:3001/api/clientes', {
           headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
             'Content-Type': 'application/json'
           }
         })
@@ -105,7 +105,7 @@ function NotasFiscaisPage() {
 
       const response = await fetch(`http://localhost:3001/api/notas-fiscais?${params}`, {
         headers: {
-          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
           'Content-Type': 'application/json'
         }
       });
@@ -145,7 +145,7 @@ function NotasFiscaisPage() {
     try {
       const response = await fetch('http://localhost:3001/api/notas-fiscais/stats', {
         headers: {
-          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
           'Content-Type': 'application/json'
         }
       });
@@ -249,7 +249,7 @@ function NotasFiscaisPage() {
     try {
       const response = await fetch(`http://localhost:3001/api/notas-fiscais/${nota.id}`, {
         headers: {
-          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
           'Content-Type': 'application/json'
         }
       });
@@ -277,7 +277,7 @@ function NotasFiscaisPage() {
         const response = await fetch(`http://localhost:3001/api/notas-fiscais/${nota.id}/finalizar`, {
           method: 'PATCH',
           headers: {
-            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Authorization': `Bearer ${localStorage.getItem('roadrw_token')}`,
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
@@ -562,7 +562,10 @@ function NotasFiscaisPage() {
             <button 
               onClick={handleSearch}
               disabled={searchLoading}
-              className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 disabled:opacity-50"
+              className="text-white px-4 py-2 rounded-md disabled:opacity-50 transition-colors"
+              style={{ backgroundColor: theme.colors.primary[500] }}
+              onMouseEnter={(e) => e.target.style.backgroundColor = theme.colors.primary[600]}
+              onMouseLeave={(e) => e.target.style.backgroundColor = theme.colors.primary[500]}
             >
               {searchLoading ? (
                 <div className="flex items-center">
