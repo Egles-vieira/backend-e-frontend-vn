@@ -1,6 +1,6 @@
 // src/components/common/ConfirmDialog.jsx
 import React from 'react';
-import { AlertTriangle, Trash2, Check, X } from 'lucide-react';
+import { TriangleAlert as AlertTriangle, Trash2, Check, X } from 'lucide-react';
 import Modal from './Modal';
 
 const ConfirmDialog = ({

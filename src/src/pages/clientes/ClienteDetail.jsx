@@ -1,7 +1,7 @@
 // src/pages/clientes/ClienteDetail.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Edit, Trash2, MapPin, FileText } from 'lucide-react';
+import { ArrowLeft, CreditCard as Edit, Trash2, MapPin, FileText } from 'lucide-react';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ConfirmDialog from '../../components/common/ConfirmDialog';
 import { clientesService } from '../../services/entities.service';

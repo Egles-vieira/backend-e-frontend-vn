@@ -1,9 +1,6 @@
 // src/pages/Dashboard.jsx
 import React, { useState, useEffect } from 'react';
-import { 
-  Users, Truck, Package, FileText, TrendingUp, 
-  AlertCircle, CheckCircle, Clock, BarChart3 
-} from 'lucide-react';
+import { Users, Truck, Package, FileText, TrendingUp, CircleAlert as AlertCircle, CircleCheck as CheckCircle, Clock, ChartBar as BarChart3 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { monitoringService, notasFiscaisService } from '../services/entities.service';
 import LoadingSpinner from '../components/common/LoadingSpinner';

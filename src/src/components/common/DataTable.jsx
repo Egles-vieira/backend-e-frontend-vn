@@ -1,10 +1,6 @@
 // src/components/common/DataTable.jsx
 import React, { useState } from 'react';
-import { 
-  ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight,
-  ArrowUpDown, ArrowUp, ArrowDown, Search, Filter,
-  Edit, Trash2, Eye, MoreHorizontal
-} from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, ArrowUpDown, ArrowUp, ArrowDown, Search, ListFilter as Filter, CreditCard as Edit, Trash2, Eye, MoveHorizontal as MoreHorizontal } from 'lucide-react';
 import LoadingSpinner from './LoadingSpinner';
 
 const DataTable = ({
